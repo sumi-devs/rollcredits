@@ -44,15 +44,22 @@ class Movie {
 class AppState {
   static List<Movie> watchlist = [];
   static Map<String, int> watchedMovies = {};
-  static String username = "John Doe";
+  static String username = "sumithras";
 
   static List<Movie> trendingMovies = [
     Movie(
       id: '1',
       title: 'Avengers: Endgame',
-      poster: 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
-      description: 'The epic conclusion to the Infinity Saga that brings together all Marvel heroes for the ultimate battle against Thanos.',
-      cast: ['Robert Downey Jr.', 'Chris Evans', 'Scarlett Johansson', 'Mark Ruffalo'],
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg',
+      description:
+          'The epic conclusion to the Infinity Saga that brings together all Marvel heroes for the ultimate battle against Thanos.',
+      cast: [
+        'Robert Downey Jr.',
+        'Chris Evans',
+        'Scarlett Johansson',
+        'Mark Ruffalo',
+      ],
       crew: ['Anthony Russo', 'Joe Russo', 'Kevin Feige'],
       averageRating: 8.4,
       isMovie: true,
@@ -60,8 +67,10 @@ class AppState {
     Movie(
       id: '2',
       title: 'Spider-Man: No Way Home',
-      poster: 'https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg',
-      description: 'Spider-Man faces villains from across the multiverse when a spell goes wrong.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_SX300.jpg',
+      description:
+          'Spider-Man faces villains from across the multiverse when a spell goes wrong.',
       cast: ['Tom Holland', 'Zendaya', 'Benedict Cumberbatch', 'Willem Dafoe'],
       crew: ['Jon Watts', 'Kevin Feige', 'Amy Pascal'],
       averageRating: 8.2,
@@ -70,9 +79,16 @@ class AppState {
     Movie(
       id: '3',
       title: 'Dune',
-      poster: 'https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
-      description: 'A young man leads a rebellion on a desert planet to control the universe\'s most valuable resource.',
-      cast: ['Timothée Chalamet', 'Rebecca Ferguson', 'Oscar Isaac', 'Josh Brolin'],
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg',
+      description:
+          'A young man leads a rebellion on a desert planet to control the universe\'s most valuable resource.',
+      cast: [
+        'Timothée Chalamet',
+        'Rebecca Ferguson',
+        'Oscar Isaac',
+        'Josh Brolin',
+      ],
       crew: ['Denis Villeneuve', 'Mary Parent', 'Cale Boyter'],
       averageRating: 8.0,
       isMovie: true,
@@ -83,8 +99,10 @@ class AppState {
     Movie(
       id: '4',
       title: 'The Last of Us',
-      poster: 'https://m.media-amazon.com/images/M/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_SX300.jpg',
-      description: 'A post-apocalyptic story of survival and hope in a world devastated by a fungal infection.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BZGUzYTI3M2EtZmM0Yy00NGUyLWI4ODEtN2Q3ZGJlYzhhZjU3XkEyXkFqcGdeQXVyNTM0OTY1OQ@@._V1_SX300.jpg',
+      description:
+          'A post-apocalyptic story of survival and hope in a world devastated by a fungal infection.',
       cast: ['Pedro Pascal', 'Bella Ramsey', 'Anna Torv'],
       crew: ['Craig Mazin', 'Neil Druckmann', 'Carolyn Strauss'],
       averageRating: 8.7,
@@ -93,8 +111,10 @@ class AppState {
     Movie(
       id: '5',
       title: 'House of the Dragon',
-      poster: 'https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtN2UzYy00ZjIwLTk4N2EtZDcxMmM3NDA3NGY2XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_SX300.jpg',
-      description: 'A Game of Thrones prequel about the Targaryen dynasty and their civil war.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtN2UzYy00ZjIwLTk4N2EtZDcxMmM3NDA3NGY2XkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_SX300.jpg',
+      description:
+          'A Game of Thrones prequel about the Targaryen dynasty and their civil war.',
       cast: ['Paddy Considine', 'Emma D\'Arcy', 'Matt Smith', 'Olivia Cooke'],
       crew: ['Ryan Condal', 'Miguel Sapochnik', 'George R.R. Martin'],
       averageRating: 8.5,
@@ -103,8 +123,10 @@ class AppState {
     Movie(
       id: '6',
       title: 'Wednesday',
-      poster: 'https://m.media-amazon.com/images/M/MV5BM2ZmMjEyZmYtOGM4YS00YTNhLWE3ZDMtNzQxM2RhNjBlODIyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg',
-      description: 'Wednesday Addams navigates her supernatural school years at Nevermore Academy.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BM2ZmMjEyZmYtOGM4YS00YTNhLWE3ZDMtNzQxM2RhNjBlODIyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg',
+      description:
+          'Wednesday Addams navigates her supernatural school years at Nevermore Academy.',
       cast: ['Jenna Ortega', 'Hunter Doohan', 'Emma Myers'],
       crew: ['Alfred Gough', 'Miles Millar', 'Tim Burton'],
       averageRating: 8.1,
@@ -116,8 +138,10 @@ class AppState {
     Movie(
       id: '7',
       title: 'The Godfather',
-      poster: 'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
-      description: 'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg',
+      description:
+          'The aging patriarch of an organized crime dynasty transfers control to his reluctant son.',
       cast: ['Marlon Brando', 'Al Pacino', 'James Caan', 'Diane Keaton'],
       crew: ['Francis Ford Coppola', 'Albert S. Ruddy'],
       averageRating: 9.2,
@@ -126,8 +150,10 @@ class AppState {
     Movie(
       id: '8',
       title: 'The Shawshank Redemption',
-      poster: 'https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg',
-      description: 'Two imprisoned men bond over years, finding solace and eventual redemption.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg',
+      description:
+          'Two imprisoned men bond over years, finding solace and eventual redemption.',
       cast: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
       crew: ['Frank Darabont', 'Niki Marvin'],
       averageRating: 9.3,
@@ -139,8 +165,10 @@ class AppState {
     Movie(
       id: '9',
       title: 'Breaking Bad',
-      poster: 'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_SX300.jpg',
-      description: 'A high school chemistry teacher turns to cooking methamphetamine after a cancer diagnosis.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_SX300.jpg',
+      description:
+          'A high school chemistry teacher turns to cooking methamphetamine after a cancer diagnosis.',
       cast: ['Bryan Cranston', 'Aaron Paul', 'Anna Gunn', 'Dean Norris'],
       crew: ['Vince Gilligan', 'Mark Johnson'],
       averageRating: 9.5,
@@ -149,8 +177,10 @@ class AppState {
     Movie(
       id: '10',
       title: 'Game of Thrones',
-      poster: 'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg',
-      description: 'Noble families vie for control of the Iron Throne of the Seven Kingdoms.',
+      poster:
+          'https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_SX300.jpg',
+      description:
+          'Noble families vie for control of the Iron Throne of the Seven Kingdoms.',
       cast: ['Sean Bean', 'Emilia Clarke', 'Kit Harington', 'Peter Dinklage'],
       crew: ['David Benioff', 'D.B. Weiss', 'George R.R. Martin'],
       averageRating: 9.0,
@@ -158,7 +188,12 @@ class AppState {
     ),
   ];
 
-  static List<Movie> get allMovies => [...trendingMovies, ...topMovies, ...trendingShows, ...topShows];
+  static List<Movie> get allMovies => [
+    ...trendingMovies,
+    ...topMovies,
+    ...trendingShows,
+    ...topShows,
+  ];
 }
 
 // Splash Screen
@@ -172,7 +207,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacement(
+      Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => AuthScreen()),
       );
@@ -194,11 +229,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 color: Colors.red,
                 shape: BoxShape.circle,
               ),
-              child: Icon(
-                Icons.movie,
-                size: 60,
-                color: Colors.white,
-              ),
+              child: Icon(Icons.movie, size: 60, color: Colors.white),
             ),
             SizedBox(height: 20),
             Text(
@@ -212,10 +243,7 @@ class _SplashScreenState extends State<SplashScreen> {
             SizedBox(height: 10),
             Text(
               'Your entertainment companion',
-              style: TextStyle(
-                color: Colors.grey,
-                fontSize: 16,
-              ),
+              style: TextStyle(color: Colors.grey, fontSize: 16),
             ),
           ],
         ),
@@ -224,7 +252,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 }
 
-// Auth Screen
+// Authentication Screen
 class AuthScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -243,11 +271,7 @@ class AuthScreen extends StatelessWidget {
                   color: Colors.red,
                   shape: BoxShape.circle,
                 ),
-                child: Icon(
-                  Icons.movie,
-                  size: 50,
-                  color: Colors.white,
-                ),
+                child: Icon(Icons.movie, size: 50, color: Colors.white),
               ),
               SizedBox(height: 40),
               Text(
@@ -261,10 +285,7 @@ class AuthScreen extends StatelessWidget {
               SizedBox(height: 10),
               Text(
                 'Discover your next favorite movie or show',
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 16,
-                ),
+                style: TextStyle(color: Colors.grey, fontSize: 16),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 60),
@@ -273,7 +294,7 @@ class AuthScreen extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => MainScreen()),
                     );
@@ -300,7 +321,7 @@ class AuthScreen extends StatelessWidget {
                 height: 50,
                 child: OutlinedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => MainScreen()),
                     );
@@ -337,7 +358,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
-  
+
   final List<Widget> _screens = [
     DashboardScreen(),
     SearchScreen(),
@@ -362,22 +383,13 @@ class _MainScreenState extends State<MainScreen> {
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: 'Search',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark),
             label: 'Watchlist',
           ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
-          ),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],
       ),
     );
@@ -404,7 +416,11 @@ class DashboardScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildSection('Trending Movies', AppState.trendingMovies, context),
+              _buildSection(
+                'Trending Movies',
+                AppState.trendingMovies,
+                context,
+              ),
               SizedBox(height: 20),
               _buildSection('Trending Shows', AppState.trendingShows, context),
               SizedBox(height: 20),
@@ -451,7 +467,8 @@ class DashboardScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => MovieDetailScreen(movie: movies[index]),
+                            builder: (context) =>
+                                MovieDetailScreen(movie: movies[index]),
                           ),
                         );
                       },
@@ -472,7 +489,7 @@ class DashboardScreen extends StatelessWidget {
                                   movies[index].poster,
                                   fit: BoxFit.cover,
                                   width: double.infinity,
-                                  errorBuilder: (context, error, stackTrace) {
+                                  errorBuilder: (context, error, stackTrace) { // in case the movie poster fails to load
                                     return Container(
                                       color: Colors.grey[800],
                                       child: Center(
@@ -529,7 +546,7 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
   void initState() {
     super.initState();
     isInWatchlist = AppState.watchlist.any((m) => m.id == widget.movie.id);
-    isWatched = AppState.watchedMovies.containsKey(widget.movie.id);
+    isWatched = AppState.watchedMovies.containsKey(widget.movie.id); // set
     userRating = AppState.watchedMovies[widget.movie.id] ?? 0;
   }
 
@@ -599,7 +616,10 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                             SizedBox(width: 5),
                             Text(
                               '${widget.movie.averageRating}/10',
-                              style: TextStyle(color: Colors.white, fontSize: 16),
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                              ),
                             ),
                           ],
                         ),
@@ -611,7 +631,10 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                               SizedBox(width: 5),
                               Text(
                                 'Your rating: $userRating/10',
-                                style: TextStyle(color: Colors.green, fontSize: 14),
+                                style: TextStyle(
+                                  color: Colors.green,
+                                  fontSize: 14,
+                                ),
                               ),
                             ],
                           ),
@@ -623,7 +646,9 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                             onPressed: () {
                               setState(() {
                                 if (isInWatchlist) {
-                                  AppState.watchlist.removeWhere((m) => m.id == widget.movie.id);
+                                  AppState.watchlist.removeWhere(
+                                    (m) => m.id == widget.movie.id,
+                                  );
                                   isInWatchlist = false;
                                 } else {
                                   AppState.watchlist.add(widget.movie);
@@ -632,7 +657,9 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                               });
                             },
                             icon: Icon(
-                              isInWatchlist ? Icons.bookmark : Icons.bookmark_border,
+                              isInWatchlist
+                                  ? Icons.bookmark
+                                  : Icons.bookmark_border,
                               color: Colors.white,
                             ),
                             label: Text(
@@ -640,7 +667,9 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                               style: TextStyle(color: Colors.white),
                             ),
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: isInWatchlist ? Colors.green : Colors.red,
+                              backgroundColor: isInWatchlist
+                                  ? Colors.green
+                                  : Colors.red,
                             ),
                           ),
                         ),
@@ -782,7 +811,9 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                           width: 30,
                           height: 30,
                           decoration: BoxDecoration(
-                            color: tempRating > index ? Colors.red : Colors.grey[700],
+                            color: tempRating > index
+                                ? Colors.red
+                                : Colors.grey[700],
                             shape: BoxShape.circle,
                           ),
                           child: Center(
@@ -814,8 +845,10 @@ class _MovieDetailScreenState extends State<MovieDetailScreen> {
                       AppState.watchedMovies[widget.movie.id] = tempRating;
                       userRating = tempRating;
                       isWatched = true;
-                      // Remove from watchlist if it's there
-                      AppState.watchlist.removeWhere((m) => m.id == widget.movie.id);
+                      // removing from watchlist if it's there
+                      AppState.watchlist.removeWhere(
+                        (m) => m.id == widget.movie.id,
+                      );
                       isInWatchlist = false;
                     });
                     Navigator.pop(context);
@@ -852,7 +885,9 @@ class _SearchScreenState extends State<SearchScreen> {
 
     setState(() {
       searchResults = AppState.allMovies
-          .where((movie) => movie.title.toLowerCase().contains(query.toLowerCase()))
+          .where(
+            (movie) => movie.title.toLowerCase().contains(query.toLowerCase()),
+          )
           .toList();
     });
   }
@@ -914,7 +949,9 @@ class _SearchScreenState extends State<SearchScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MovieDetailScreen(movie: searchResults[index]),
+                                builder: (context) => MovieDetailScreen(
+                                  movie: searchResults[index],
+                                ),
                               ),
                             );
                           },
@@ -929,22 +966,25 @@ class _SearchScreenState extends State<SearchScreen> {
                                   child: Container(
                                     width: double.infinity,
                                     child: ClipRRect(
-                                      borderRadius: BorderRadius.vertical(top: Radius.circular(10)),
+                                      borderRadius: BorderRadius.vertical(
+                                        top: Radius.circular(10),
+                                      ),
                                       child: Image.network(
                                         searchResults[index].poster,
                                         fit: BoxFit.cover,
-                                        errorBuilder: (context, error, stackTrace) {
-                                          return Container(
-                                            color: Colors.grey[800],
-                                            child: Center(
-                                              child: Icon(
-                                                Icons.movie,
-                                                color: Colors.grey,
-                                                size: 40,
-                                              ),
-                                            ),
-                                          );
-                                        },
+                                        errorBuilder:
+                                            (context, error, stackTrace) {
+                                              return Container(
+                                                color: Colors.grey[800],
+                                                child: Center(
+                                                  child: Icon(
+                                                    Icons.movie,
+                                                    color: Colors.grey,
+                                                    size: 40,
+                                                  ),
+                                                ),
+                                              );
+                                            },
                                       ),
                                     ),
                                   ),
@@ -1003,26 +1043,16 @@ class _WatchlistScreenState extends State<WatchlistScreen> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(
-                      Icons.bookmark_border,
-                      size: 80,
-                      color: Colors.grey,
-                    ),
+                    Icon(Icons.bookmark_border, size: 80, color: Colors.grey),
                     SizedBox(height: 20),
                     Text(
                       'Your watchlist is empty',
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 18,
-                      ),
+                      style: TextStyle(color: Colors.grey, fontSize: 18),
                     ),
                     SizedBox(height: 10),
                     Text(
                       'Add movies and shows to your watchlist',
-                      style: TextStyle(
-                        color: Colors.grey[600],
-                        fontSize: 14,
-                      ),
+                      style: TextStyle(color: Colors.grey[600], fontSize: 14),
                     ),
                   ],
                 ),
@@ -1041,7 +1071,9 @@ class _WatchlistScreenState extends State<WatchlistScreen> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MovieDetailScreen(movie: AppState.watchlist[index]),
+                          builder: (context) => MovieDetailScreen(
+                            movie: AppState.watchlist[index],
+                          ),
                         ),
                       ).then((_) {
                         setState(() {}); // to keep refreshing the watchlist
@@ -1091,9 +1123,7 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    List<Movie> watchedMoviesList = AppState.allMovies
-        .where((movie) => AppState.watchedMovies.containsKey(movie.id))
-        .toList();
+    List<Movie> watchedMoviesList = AppState.allMovies.where((movie) => AppState.watchedMovies.containsKey(movie.id)).toList();
 
     return Scaffold(
       backgroundColor: Colors.black,
@@ -1140,10 +1170,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         SizedBox(height: 5),
                         Text(
                           '${AppState.watchedMovies.length} watched • ${AppState.watchlist.length} in watchlist',
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 14,
-                          ),
+                          style: TextStyle(color: Colors.grey, fontSize: 14),
                         ),
                       ],
                     ),
@@ -1151,7 +1178,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ],
               ),
               SizedBox(height: 30),
-              
+
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -1184,7 +1211,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => MovieDetailScreen(movie: movie),
+                                  builder: (context) =>
+                                      MovieDetailScreen(movie: movie),
                                 ),
                               );
                             },
@@ -1205,18 +1233,19 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                         movie.poster,
                                         fit: BoxFit.cover,
                                         width: double.infinity,
-                                        errorBuilder: (context, error, stackTrace) {
-                                          return Container(
-                                            color: Colors.grey[800],
-                                            child: Center(
-                                              child: Icon(
-                                                Icons.movie,
-                                                color: Colors.grey,
-                                                size: 25,
-                                              ),
-                                            ),
-                                          );
-                                        },
+                                        errorBuilder:
+                                            (context, error, stackTrace) {
+                                              return Container(
+                                                color: Colors.grey[800],
+                                                child: Center(
+                                                  child: Icon(
+                                                    Icons.movie,
+                                                    color: Colors.grey,
+                                                    size: 25,
+                                                  ),
+                                                ),
+                                              );
+                                            },
                                       ),
                                     ),
                                   ),
@@ -1224,10 +1253,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
-                                      Icon(Icons.star, color: Colors.amber, size: 12),
+                                      Icon(
+                                        Icons.star,
+                                        color: Colors.amber,
+                                        size: 12,
+                                      ),
                                       Text(
                                         '$rating',
-                                        style: TextStyle(color: Colors.white, fontSize: 12),
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 12,
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -1239,7 +1275,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
               ),
               SizedBox(height: 30),
-              
+
               Align(
                 alignment: Alignment.centerLeft,
                 child: Text(
@@ -1271,7 +1307,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => MovieDetailScreen(movie: movie),
+                                  builder: (context) =>
+                                      MovieDetailScreen(movie: movie),
                                 ),
                               );
                             },
@@ -1296,7 +1333,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                   SizedBox(height: 5),
                                   Text(
                                     movie.title,
-                                    style: TextStyle(color: Colors.white, fontSize: 10),
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 10,
+                                    ),
                                     maxLines: 2,
                                     overflow: TextOverflow.ellipsis,
                                     textAlign: TextAlign.center,
@@ -1309,7 +1349,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
               ),
               SizedBox(height: 40),
-              
+
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.all(20),
@@ -1329,11 +1369,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
                     ),
                     SizedBox(height: 20),
-                    _buildSettingsItem(Icons.person, 'Account Details'),
-                    _buildSettingsItem(Icons.notifications, 'Notifications'),
-                    _buildSettingsItem(Icons.privacy_tip, 'Privacy'),
-                    _buildSettingsItem(Icons.help, 'Help & Support'),
-                    _buildSettingsItem(Icons.logout, 'Logout', isLogout: true),
+                    settingsItem(Icons.person, 'Account Details'),
+                    settingsItem(Icons.notifications, 'Notifications'),
+                    settingsItem(Icons.privacy_tip, 'Privacy'),
+                    settingsItem(Icons.help, 'Help & Support'),
+                    settingsItem(Icons.logout, 'Logout', isLogout: true),
                   ],
                 ),
               ),
@@ -1344,7 +1384,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  Widget _buildSettingsItem(IconData icon, String title, {bool isLogout = false}) {
+  Widget settingsItem(
+    IconData icon,
+    String title, {
+    bool isLogout = false,
+  }) {
     return GestureDetector(
       onTap: () {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -1358,11 +1402,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         padding: EdgeInsets.symmetric(vertical: 12),
         child: Row(
           children: [
-            Icon(
-              icon,
-              color: isLogout ? Colors.red : Colors.grey,
-              size: 24,
-            ),
+            Icon(icon, color: isLogout ? Colors.red : Colors.grey, size: 24),
             SizedBox(width: 15),
             Text(
               title,
@@ -1372,11 +1412,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             Spacer(),
-            Icon(
-              Icons.arrow_forward_ios,
-              color: Colors.grey,
-              size: 16,
-            ),
+            Icon(Icons.arrow_forward_ios, color: Colors.grey, size: 16),
           ],
         ),
       ),
